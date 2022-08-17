@@ -1,0 +1,14 @@
+name: ed-fi-survey-loader-public
+title: Ed-Fi-Survey-Loader-Public
+username: shoover1
+account: shoover1
+server: r.northallegheny.org
+hostUrl: https://r.northallegheny.org/__api__
+appId: 49
+bundleId: 410
+url: https://r.northallegheny.org/surveyLoaderDemo/
+when: 1658870961.34599
+lastSyncTime: 1658870961.34599
+asMultiple: FALSE
+asStatic: FALSE
+ignoredFiles: dbapp.sqlite
