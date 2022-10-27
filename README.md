@@ -32,7 +32,7 @@ These instructions are for running an isolated instance of the application on a 
 5. Open the app.R file within the “EdFi-Survey-Loader” folder in the project directory and run the application (in a browser window).
 
 ## User Instructions
-A step-by-step guide for application users is built into the app interface with the "How to Use This Page" button (and therefore is not duplicated here). Users seeking an app overview without having to deploy their own version can visit the demo version hosted [here](https://r.northallegheny.org/surveyLoaderDemo/).
+A step-by-step guide for application users is built into the app interface with the "How to Use This Page" button. Users seeking an app overview without having to deploy their own version can __[follow along with the user tutorial video](https://www.youtube.com/watch?v=pmdO5QVGg4o)__ and/or visit a demo version of the app, hosted [here](https://r.northallegheny.org/surveyLoaderDemo/).
 
 ## Legal Information
 
