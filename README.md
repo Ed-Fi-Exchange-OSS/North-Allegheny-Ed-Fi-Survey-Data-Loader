@@ -6,9 +6,17 @@ Within the application, users load survey metadata and question metadata to thei
 
 A preview of the application can be accessed here (https://r.northallegheny.org/surveyLoaderDemo/). Preview users are welcome to try uploading their own sample data to their own sample ODS (e.g. Populated Template/Grand Bend dataset); for obvious reasons, do not send actual student data through the demo application.
 
-## Local Deployment Instructions
+## Deployment Instructions
 
-These instructions are for running an isolated instance of the application on a Windows OS. For users with an active RStudio Connect license or Shiny Server instance, follow your team's usual procedure for publishing an application to the server once local deployment has succeeded.
+### Docker Deployment
+**Users with a Docker installation can deploy a local instance of the application by running the following statements at the command line** (note step #3 may take on the order of 15-40 minutes to run on first execution): 
+1. *git clone https://github.com/Ed-Fi-Exchange-OSS/North-Allegheny-Ed-Fi-Survey-Data-Loader*
+2. *cd North-Allegheny-Ed-Fi-Survey-Data-Loader*
+3. *docker build -t edfi-survey-loader .*
+4. *docker run -dp 3000:80 edfi-survey-loader*
+
+### Manual Deployment
+Alternatively, the instructions below are for deploying an isolated instance of the application interactively on a Windows OS. For users with an active RStudio Connect license or Shiny Server instance, follow your team's usual procedure for publishing an application to the server once local deployment has succeeded.
 
 ### Pre-Requisites
 - Ed-Fi Operational Data Store (> v3.3–sufficiently recent that the survey domain is included)
@@ -30,6 +38,7 @@ These instructions are for running an isolated instance of the application on a 
   - Choose Y/Yes for the package restore prompts
   - Go get some coffee or a snack–package building could take a while…
 5. Open the app.R file within the “EdFi-Survey-Loader” folder in the project directory and run the application (in a browser window).
+
 
 ## User Instructions
 A step-by-step guide for application users is built into the app interface with the "How to Use This Page" button. Users seeking an app overview without having to deploy their own version can __[follow along with the user tutorial video](https://www.youtube.com/watch?v=pmdO5QVGg4o)__ and/or visit a demo version of the app, hosted [here](https://r.northallegheny.org/surveyLoaderDemo/).
